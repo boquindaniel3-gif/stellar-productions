@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Stellar Productions | Casa Productora Audiovisual</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css?v=22">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- Fondo de estrellas animado: cae de arriba hacia abajo en loop continuo -->
+    <div class="starfield-bg" aria-hidden="true">
+        <div class="star-layer">
+            <div class="star-dots"></div>
+            <div class="star-sparks"></div>
+        </div>
+        <div class="star-layer">
+            <div class="star-dots"></div>
+            <div class="star-sparks"></div>
+        </div>
+    </div>
+
+    <header>
+		<nav class="navbar navbar-expand-lg text-uppercase menu">
+			<div class="container">
+				<a class="navbar-brand logo-stage" href="#top">
+					<span class="logo-float logo-float--nav">
+						<span class="logo-coin">
+							<img src="imagenes/logo-nuevo.png" height="70" alt="Stellar Productions" class="logo-gira" id="logo-navbar">
+						</span>
+					</span>
+					<svg class="sparkle sparkle-navbar" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+				</a>
+				<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav flex-row align-items-center">
+						<li class="nav-item"><a class="nav-link" href="#top">INICIO</a></li>
+						<li class="nav-item"><a class="nav-link" href="#acerca">NOSOTROS</a></li>
+						<li class="nav-item"><a class="nav-link" href="#servicios">SERVICIOS</a></li>
+					</ul>
+					<div class="d-flex align-items-center navbar-cta">
+						<a class="btn btn-pedir" href="#contacto">COTIZAR PROYECTO</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+<!--titulo de la pagina-->
+<div class="jumbotron sec-deco">
+    <img src="imagenes/doodles/camara.png" class="deco-doodle deco-hero deco-hero-camara" alt="" aria-hidden="true">
+    <img src="imagenes/doodles/estrellas.png" class="deco-doodle deco-hero deco-hero-estrellas" alt="" aria-hidden="true">
+    <img src="imagenes/doodles/burst.png" class="deco-doodle deco-hero deco-hero-burst" alt="" aria-hidden="true">
+    <svg class="sparkle sparkle-hero sparkle-hero-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+    <svg class="sparkle sparkle-hero sparkle-hero-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+    <svg class="sparkle sparkle-hero sparkle-hero-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="timecode" id="live-timecode">00:00:00:00 — REC</div>
+                <h1>Contamos historias que se <span>sienten.</span></h1>
+                <p>
+                    Somos una productora audiovisual especializada en video
+                    comercial, cine publicitario, contenido para marcas y
+                    cobertura de eventos. Convertimos ideas en imágenes que
+                    permanecen.
+                </p>
+                <a href="#galeria" class="btn btn-warning btn-lg">
+                    Ver Portafolio <span class="btn-arrow">→</span>
+                </a>
+            </div>
+            <!-- Logo grande -->
+            <div class="col-md-6 text-center">
+                <div class="hero-logo logo-stage logo-stage--hero">
+                    <div class="logo-float logo-float--hero">
+                        <div class="logo-coin">
+                            <img src="imagenes/logo.png" class="img-fluid logo-gira" id="logo-hero" alt="Stellar Productions" role="button" tabindex="0" title="Toca para girar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    </header>
+<!-- Sección Acerca -->
+<section id="acerca" class="container-fluid text-center sec-deco">
+    <img src="imagenes/doodles/claqueta.png" class="deco-doodle deco-acerca deco-acerca-claqueta" alt="" aria-hidden="true">
+    <img src="imagenes/doodles/exclamacion.png" class="deco-doodle deco-acerca deco-acerca-exclamacion" alt="" aria-hidden="true">
+    <div class="row justify-content-center">
+        <div class="col-lg-9 reveal">
+
+            <div class="titulo-decorado titulo-decorado-centrado">
+                <h2 class="titulo-nosotros split-line"><span>Quiénes somos</span></h2>
+                <svg class="sparkle sparkle-titulo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+            </div>
+
+            <h4 class="texto-nosotros d-flex justify-content-center align-items-center flex-wrap">
+
+                <img src="imagenes/doodles/claqueta.png" width="70" height="70"
+                     class="icono-nosotros icono-nosotros-png me-3" alt="">
+
+                Stellar Productions somos una productora audiovisual que combina creatividad, innovación y estrategia para crear contenido que impacta y posiciona marcas. No solo producimos fotos y videos, diseñamos ideas pensadas para destacar y generar resultados reales. Transformamos cada proyecto en una experiencia visual con propósito, ayudando a nuestros clientes a comunicar mejor, conectar con su audiencia y sobresalir en un mundo lleno de contenido.
+
+                <img src="imagenes/doodles/estrellas.png" width="70" height="70"
+                     class="icono-nosotros icono-nosotros-png ms-3" alt="">
+
+            </h4>
+
+        </div>
+    </div>
+</section>
+<!-- Sección Misión, Visión y Valores -->
+<section class="container-fluid bg-gray text-center sec-deco">
+    <img src="imagenes/doodles/numero1.png" class="deco-doodle deco-mvv deco-mvv-numero" alt="" aria-hidden="true">
+    <div class="row">
+
+        <!-- Misión -->
+        <div class="col-md-4">
+            <div class="card p-4 shadow-sm h-100 reveal" style="transition-delay:.05s">
+                <img src="imagenes/doodles/numero1.png" class="deco-doodle deco-card deco-card-mision" alt="" aria-hidden="true">
+                <h3>Misión</h3>
+                <p>
+                    Brindar soluciones audiovisuales creativas e innovadoras que ayuden a marcas, emprendimientos y proyectos a comunicar su esencia de forma estratégica. En Stellar Productions trabajamos para transformar ideas en contenido visual de alto impacto, que conecte con las audiencias y genere resultados reales en el entorno digital y comercial.
+                </p>
+            </div>
+        </div>
+
+        <!-- Visión -->
+        <div class="col-md-4">
+            <div class="card p-4 shadow-sm h-100 reveal" style="transition-delay:.15s">
+                <img src="imagenes/doodles/estrella.png" class="deco-doodle deco-card deco-card-vision" alt="" aria-hidden="true">
+                <h3>Visión</h3>
+                <p>
+                    Ser una productora audiovisual reconocida a nivel nacional, destacada por la calidad, creatividad e impacto de nuestros eventos y servicios. En Stellar Productions aspiramos a consolidarnos como una marca líder, innovando constantemente y ampliando nuestras áreas de trabajo. Asimismo, proyectamos contar con equipo de mayor calidad y tecnología avanzada que nos permita llevar cada producción a un nivel superior.
+                </p>
+            </div>
+        </div>
+
+        <!-- Valores -->
+        <div class="col-md-4">
+            <div class="card p-4 shadow-sm h-100 reveal" style="transition-delay:.25s">
+                <h3>Valores</h3>
+                <ul class="lista-valores">
+                    <li>Creatividad: Ideas originales para que cada marca se destaque.</li>
+                    <li>Innovación: Contenido actual, alineado a las tendencias.</li>
+                    <li>Calidad: Cuidamos cada detalle con resultado profesional.</li>
+                    <li>Compromiso: Responsabilidad y enfoque en cada cliente.</li>
+                    <li>Trabajo en equipo: Colaboración organizada y producciones sólidas.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- Sección Servicios -->
+<section id="servicios" class="container-fluid text-center sec-deco">
+    <img src="imagenes/doodles/camara.png" class="deco-doodle deco-servicios deco-servicios-camara" alt="" aria-hidden="true">
+    <img src="imagenes/doodles/destellos.png" class="deco-doodle deco-servicios deco-servicios-destellos" alt="" aria-hidden="true">
+    <div class="titulo-decorado titulo-decorado-centrado">
+        <h2 class="reveal">Lo que producimos</h2>
+        <svg class="sparkle sparkle-titulo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <!-- Fotografía -->
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 shadow-sm h-100 reveal" style="transition-delay:.05s">
+                <svg class="sparkle sparkle-card" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+                <div class="card-icono card-icono-doodle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 8h3.2L9 5.4h6L16.8 8H20a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                        <circle cx="12" cy="13.5" r="3.4"/>
+                    </svg>
+                </div>
+                <h3>Fotografía</h3>
+                <p>
+                    Sesiones de producto, retrato y cobertura editorial con
+                    dirección de arte propia.
+                </p>
+                <a href="#contacto" class="btn btn-warning">Cotizar <span class="btn-arrow">→</span></a>
+            </div>
+        </div>
+
+        <!-- Eventos -->
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 shadow-sm h-100 reveal" style="transition-delay:.15s">
+                <svg class="sparkle sparkle-card" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+                <div class="card-icono card-icono-doodle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9.5 4 5.5 20 8 19 12 3 9.5z"/>
+                        <path d="M3 9.5 3 18a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V12l-18-2.5z"/>
+                        <path d="M7 6.2 9 9.8 M12 6.9 14 10.5 M17 7.6 19 11.2"/>
+                    </svg>
+                </div>
+                <h3>Cobertura de Eventos</h3>
+                <p>
+                    Conciertos, conferencias y bodas capturados en vivo, en
+                    múltiples cámaras y con entrega editada.
+                </p>
+                <a href="#contacto" class="btn btn-warning">Cotizar <span class="btn-arrow">→</span></a>
+            </div>
+        </div>
+
+        <!-- Visuals -->
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 shadow-sm h-100 reveal" style="transition-delay:.25s">
+                <svg class="sparkle sparkle-card" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+                <div class="card-icono card-icono-doodle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M7 4v16M17 4v16M2 9h5M2 15h5M17 9h5M17 15h5"/>
+                    </svg>
+                </div>
+                <h3>Visuals</h3>
+                <p>
+                    Piezas visuales para redes, shows y marcas: motion,
+                    loops y contenido cinematográfico listo para publicar.
+                </p>
+                <a href="#contacto" class="btn btn-warning">Cotizar <span class="btn-arrow">→</span></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- Sección Portafolio -->
+<section id="galeria" class="container-fluid text-center bg-light sec-deco">
+    <img src="imagenes/doodles/estrella.png" class="deco-doodle deco-galeria deco-galeria-estrella" alt="" aria-hidden="true">
+    <img src="imagenes/doodles/abstracto.png" class="deco-doodle deco-galeria deco-galeria-abstracto" alt="" aria-hidden="true">
+    <img src="imagenes/doodles/mascara.png" class="deco-doodle deco-galeria deco-galeria-mascara" alt="" aria-hidden="true">
+
+	<div class="titulo-decorado titulo-decorado-centrado">
+		<h2 class="reveal">Portafolio</h2>
+		<svg class="sparkle sparkle-titulo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+	</div>
+	<h4 class="reveal">Cobertura de eventos, fotografía, visuals y detrás de nuestros eventos</h4>
+
+	<!-- Cobertura de eventos -->
+	<div class="portafolio-bloque reveal">
+		<h3 class="portafolio-subtitulo"><i class="bi bi-camera-reels"></i> Cobertura de Eventos</h3>
+		<div class="foto-cadena" id="cadena-eventos">
+			<button type="button" class="foto-cadena-btn foto-cadena-prev" aria-label="Videos anteriores"><i class="bi bi-chevron-left"></i></button>
+			<div class="foto-cadena-pista" tabindex="0" aria-label="Galería de cobertura de eventos">
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/eventos/pacheco.jpg" preload="metadata" playsinline>
+							<source src="videos/eventos/pacheco.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir cobertura Pacheco"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">EVT. 01</span>
+							<div class="titulo">Pacheco</div>
+							<span class="cat">Cobertura de eventos</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/eventos/evento-02.jpg" preload="metadata" playsinline>
+							<source src="videos/eventos/evento-02.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir cobertura Cacaopera"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">EVT. 02</span>
+							<div class="titulo">Cacaopera</div>
+							<span class="cat">Cobertura de eventos</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/eventos/evento-03.jpg" preload="metadata" playsinline>
+							<source src="videos/eventos/evento-03.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir cobertura Desfile"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">EVT. 03</span>
+							<div class="titulo">Desfile</div>
+							<span class="cat">Cobertura de eventos</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/eventos/evento-04.jpg" preload="metadata" playsinline>
+							<source src="videos/eventos/evento-04.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir cobertura Challenger"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">EVT. 04</span>
+							<div class="titulo">Challenger</div>
+							<span class="cat">Cobertura de eventos</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/eventos/evento-05.jpg" preload="metadata" playsinline>
+							<source src="videos/eventos/evento-05.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir cobertura Electrolit"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">EVT. 05</span>
+							<div class="titulo">Electrolit</div>
+							<span class="cat">Cobertura de eventos</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="foto-cadena-btn foto-cadena-next" aria-label="Videos siguientes"><i class="bi bi-chevron-right"></i></button>
+		</div>
+	</div>
+
+	<!-- Fotografía: cadena horizontal -->
+	<div class="portafolio-bloque reveal" style="transition-delay:.08s">
+		<h3 class="portafolio-subtitulo"><i class="bi bi-camera-fill"></i> Fotografía</h3>
+		<div class="foto-cadena" id="cadena-fotografia">
+			<button type="button" class="foto-cadena-btn foto-cadena-prev" aria-label="Fotos anteriores"><i class="bi bi-chevron-left"></i></button>
+			<div class="foto-cadena-pista" tabindex="0" aria-label="Galería de fotografías">
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana">
+						<img src="imagenes/portafolio/fotografia/foto-15sep-desfile.jpg" alt="Desfile de Independencia, Complejo Educativo Ignacio Pacheco Castro" loading="lazy">
+						<div class="evento-foto-cap">Desfile de Independencia — 15 de septiembre</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana">
+						<img src="imagenes/portafolio/fotografia/foto-15sep-porristas.jpg" alt="Porristas en el desfile del 15 de septiembre" loading="lazy">
+						<div class="evento-foto-cap">Porristas</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana">
+						<img src="imagenes/portafolio/fotografia/foto-15sep-banda.jpg" alt="Banda de guerra en el desfile del 15 de septiembre" loading="lazy">
+						<div class="evento-foto-cap">Banda de guerra</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana foto-mostrar-letras">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-01.jpg" alt="Balón Pumas CD, fotografía Stellar Productions" loading="lazy">
+						<div class="evento-foto-cap">Pumas CD — Balón</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-02.jpg" alt="Jugadores de CD Pumas en rueda de equipo" loading="lazy">
+						<div class="evento-foto-cap">Pumas CD — Rueda de equipo</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-03.jpg" alt="Jugador de CD Pumas conduciendo el balón" loading="lazy">
+						<div class="evento-foto-cap">Pumas CD — En el campo</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana foto-mostrar-cara">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-04.jpg" alt="Escena de teatro con velas" loading="lazy" decoding="async">
+						<div class="evento-foto-cap">Teatro — Velas</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana foto-mostrar-cara">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-05.jpg" alt="Escena de teatro, sorbete artesanal" loading="lazy" decoding="async">
+						<div class="evento-foto-cap">Teatro — Sorbete artesanal</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-06.jpg" alt="Escena grupal de teatro y danza" loading="lazy">
+						<div class="evento-foto-cap">Teatro — Escena grupal</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana foto-mostrar-cara">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-07.jpg" alt="Personaje con sombrero y cámara en desfile" loading="lazy" decoding="async">
+						<div class="evento-foto-cap">Desfile — Sombrero y cámara</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana foto-mostrar-cara">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-08.jpg" alt="Zanquero con traje rojo y azul en desfile" loading="lazy" decoding="async">
+						<div class="evento-foto-cap">Desfile — Zanquero</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana foto-mostrar-cara">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-09.jpg" alt="Gigante de papel y tela en desfile" loading="lazy" decoding="async">
+						<div class="evento-foto-cap">Desfile — Gigante</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-10.jpg" alt="Jugador de fútbol conduciendo el balón" loading="lazy" decoding="async">
+						<div class="evento-foto-cap">Sesión fútbol — En el campo</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana foto-mostrar-cara">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-11.jpg" alt="Portero despejando el balón" loading="lazy" decoding="async">
+						<div class="evento-foto-cap">Sesión fútbol — Despeje</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="evento-foto portafolio-ventana foto-mostrar-cara">
+						<img src="imagenes/portafolio/fotografia/foto-nueva-12.jpg" alt="Portero en atajada" loading="lazy" decoding="async">
+						<div class="evento-foto-cap">Sesión fútbol — Atajada</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="foto-cadena-btn foto-cadena-next" aria-label="Fotos siguientes"><i class="bi bi-chevron-right"></i></button>
+		</div>
+	</div>
+
+	<!-- Visuals -->
+	<div class="portafolio-bloque reveal" style="transition-delay:.1s">
+		<h3 class="portafolio-subtitulo"><i class="bi bi-film"></i> Nuestros Visuals</h3>
+		<div class="row g-4 justify-content-center">
+			<div class="col-md-4 galeria-item">
+				<div class="reel reel--comercial portafolio-ventana reveal" data-reel-video style="transition-delay:.05s">
+					<video class="reel-thumb" poster="imagenes/portafolio/visuals/agosto.jpg" preload="metadata" playsinline>
+						<source src="videos/visuals/agosto.mp4" type="video/mp4">
+					</video>
+					<button type="button" class="play" aria-label="Reproducir Agosto"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+					<div class="reel-info">
+						<span class="tc">VIS. 01</span>
+						<div class="titulo">Agosto</div>
+						<span class="cat">Visual</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 galeria-item">
+				<div class="reel reel--comercial portafolio-ventana reveal" data-reel-video style="transition-delay:.12s">
+					<video class="reel-thumb" poster="imagenes/portafolio/visuals/bolas-de-fuego.jpg" preload="metadata" playsinline>
+						<source src="videos/visuals/bolas-de-fuego.mp4" type="video/mp4">
+					</video>
+					<button type="button" class="play" aria-label="Reproducir Bolas de fuego"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+					<div class="reel-info">
+						<span class="tc">VIS. 02</span>
+						<div class="titulo">Bolas de fuego</div>
+						<span class="cat">Visual</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 galeria-item">
+				<div class="reel reel--comercial portafolio-ventana reveal" data-reel-video style="transition-delay:.19s">
+					<video class="reel-thumb" poster="imagenes/portafolio/visuals/central-america.jpg" preload="metadata" playsinline>
+						<source src="videos/visuals/central-america.mp4" type="video/mp4">
+					</video>
+					<button type="button" class="play" aria-label="Reproducir Central América"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+					<div class="reel-info">
+						<span class="tc">VIS. 03</span>
+						<div class="titulo">Central América</div>
+						<span class="cat">Visual</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Detrás de nuestros eventos: cadena horizontal -->
+	<div class="portafolio-bloque reveal">
+		<h3 class="portafolio-subtitulo"><i class="bi bi-camera-video"></i> Detrás de nuestros eventos</h3>
+		<div class="foto-cadena" id="cadena-detras">
+			<button type="button" class="foto-cadena-btn foto-cadena-prev" aria-label="Videos anteriores"><i class="bi bi-chevron-left"></i></button>
+			<div class="foto-cadena-pista" tabindex="0" aria-label="Galería detrás de cámara">
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/detras/gravitron.jpg" preload="metadata" playsinline>
+							<source src="videos/detras/gravitron.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir detrás de cámara Gravitron"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">BTS. 01</span>
+							<div class="titulo">Gravitron</div>
+							<span class="cat">Detrás de cámara</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/detras/exposicion.jpg" preload="metadata" playsinline>
+							<source src="videos/detras/exposicion.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir detrás de cámara Exposición"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">BTS. 02</span>
+							<div class="titulo">Exposición</div>
+							<span class="cat">Detrás de cámara</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/detras/bts-03.jpg" preload="metadata" playsinline>
+							<source src="videos/detras/bts-03.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir detrás de cámara Rolling Free"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">BTS. 03</span>
+							<div class="titulo">Rolling Free</div>
+							<span class="cat">Detrás de cámara</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/detras/bts-04.jpg" preload="metadata" playsinline>
+							<source src="videos/detras/bts-04.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir detrás de cámara En el monitor"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">BTS. 04</span>
+							<div class="titulo">En el monitor</div>
+							<span class="cat">Detrás de cámara</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--evento portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/detras/bts-05.jpg" preload="metadata" playsinline>
+							<source src="videos/detras/bts-05.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir detrás de cámara En el teatro"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">BTS. 05</span>
+							<div class="titulo">En el teatro</div>
+							<span class="cat">Detrás de cámara</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="foto-cadena-btn foto-cadena-next" aria-label="Videos siguientes"><i class="bi bi-chevron-right"></i></button>
+		</div>
+	</div>
+
+</section>
+<!-- Sección Contacto -->
+<section id="contacto" class="container-fluid bg-gray sec-deco contacto-seccion">
+
+    <div class="titulo-decorado titulo-decorado-centrado">
+        <h2 class="text-center reveal">Cotiza tu Proyecto</h2>
+        <svg class="sparkle sparkle-titulo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></svg>
+    </div>
+    <h4 class="text-center reveal">Cuéntanos qué quieres producir y te contactamos en menos de 24 horas.</h4>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+    <div class="row">
+
+        <!-- Columna izquierda -->
+        <div class="col-md-6 reveal">
+
+            <div class="form-group mb-3">
+                <label><strong>Nombre completo</strong></label>
+                <input type="text" id="campo-nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="form-group mb-3">
+                <label><strong>Teléfono</strong></label>
+                <input type="tel" id="campo-telefono" class="form-control" placeholder="0000-0000" required>
+            </div>
+
+            <div class="form-group mb-3">
+                <label><strong>Tipo de proyecto</strong></label>
+                <select id="campo-servicio" class="form-control" required>
+                    <option selected disabled value="">Selecciona un servicio</option>
+                    <option>Video Comercial</option>
+                    <option>Fotografía</option>
+                    <option>Cobertura de Eventos</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-md-6 reveal" style="transition-delay:.1s">
+
+            <div class="form-group mb-3">
+                <label><strong>Correo electrónico</strong></label>
+                <input type="email" id="campo-correo" class="form-control" placeholder="correo@ejemplo.com" required>
+            </div>
+
+            <div class="form-group mb-3">
+                <label><strong>Fecha estimada</strong></label>
+                <input type="date" id="campo-fecha" class="form-control">
+            </div>
+
+            <div class="form-group mb-3">
+                <label><strong>Detalles del proyecto</strong></label>
+                <textarea id="campo-detalles" class="form-control" rows="4"
+                    placeholder="Ejemplo: video comercial de 30 segundos para redes sociales, estilo cinematográfico..."></textarea>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Botón -->
+    <div class="text-center mt-4">
+        <button type="button" id="btn-enviar-solicitud" class="btn btn-pedir btn-lg">
+            Enviar Solicitud <span class="btn-arrow">→</span>
+        </button>
+        <p id="mensaje-formulario" class="mensaje-formulario" role="status" aria-live="polite"></p>
+    </div>
+
+        </div>
+    </div>
+
+</section>
+<!--Pie de página-->
+<footer class="container-fluid text-center sec-deco">
+    <img src="imagenes/doodles/destellos.png" class="deco-doodle deco-footer deco-footer-destellos" alt="" aria-hidden="true">
+	<a href="#top" title="Ir al inicio">
+		<span class="bi bi-house-door-fill"></span>
+	</a>
+<p>Página creada por: <a href="#top" title="Visite nuestro sitio">Stellar Productions</a></p>
+</footer>
+ <!--Script para añadir desplazamiento suave-->
+<script>
+$(document).ready(function(){
+  // Agrega desplazamiento suave a anclas en barra de navegación y pie.
+  $(".navbar a, footer a[href='#top']").on('click', function(event) {
+  // Removiendo comportamiento por defecto.
+  event.preventDefault();
+  // Almacenando el contenedor destino.
+  var hash = this.hash || "#top";
+  var $destino = $(hash);
+  if(!$destino.length) return;
+
+  // Si el menú móvil está abierto, ciérralo de inmediato (sin esperar).
+  var $menu = $('#navbarSupportedContent');
+  if ($menu.hasClass('show')) {
+    var colapsable = bootstrap.Collapse.getOrCreateInstance($menu[0], { toggle:false });
+    colapsable.hide();
+  }
+
+  // Agregando desplazamiento suave y más rápido.
+  $('html, body').animate({
+    scrollTop: $destino.offset().top
+  }, 450, function(){
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+<!--Script para animar elementos al hacer scroll-->
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    var revelados = document.querySelectorAll('.reveal, .split-line');
+    var observador = new IntersectionObserver(function(entradas){
+        entradas.forEach(function(entrada){
+            if(entrada.isIntersecting){
+                entrada.target.classList.add('in-view');
+                observador.unobserve(entrada.target);
+            }
+        });
+    }, { threshold:0.15 });
+    revelados.forEach(function(el){ observador.observe(el); });
+});
+</script>
+
+<!--Script fallback del efecto scanner en el formulario (navegadores sin soporte :has())-->
+<script>
+(function(){
+    if (CSS.supports('selector(:has(*))')) return; // el CSS puro ya lo resuelve
+    document.querySelectorAll('#contacto .form-control').forEach(function(campo){
+        var grupo = campo.closest('.form-group');
+        campo.addEventListener('focus', function(){
+            grupo.classList.remove('escaneando');
+            void grupo.offsetWidth; // reinicia la animación
+            grupo.classList.add('escaneando');
+        });
+    });
+})();
+</script>
+<!--Script generador del fondo de estrellas (puntos + destellos grandes, estilo de la imagen de referencia)-->
+<script>
+(function(){
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Puntos pequeños dispersos, mismo patrón repetido en ambas capas para loop perfecto
+    function generarPuntos(cantidad){
+        var sombras = [];
+        for(var i=0;i<cantidad;i++){
+            var x = (Math.random()*100).toFixed(2);
+            var y = (Math.random()*100).toFixed(2);
+            var op = (Math.random()*0.5 + 0.25).toFixed(2);
+            sombras.push(x+'vw '+y+'vh 0 rgba(255,255,255,'+op+')');
+        }
+        return sombras.join(',');
+    }
+    var patronPuntos = generarPuntos(140);
+    document.querySelectorAll('.star-dots').forEach(function(el){
+        el.style.boxShadow = patronPuntos;
+    });
+
+    // Destellos grandes de 4 puntas (blanco / dorado / lima), como en la imagen de referencia
+    var colores = ['#FFFFFF', '#FFFFFF', '#F4D35E', '#CFEB3D'];
+    var svgDestello = '<path d="M12 2C12 7 13 10 22 12C13 14 12 17 12 22C12 17 11 14 2 12C11 10 12 7 12 2Z"/>';
+    function generarDestellos(cantidad){
+        var html = '';
+        for(var i=0;i<cantidad;i++){
+            var x = (Math.random()*96).toFixed(2);
+            var y = (Math.random()*96).toFixed(2);
+            var tam = (Math.random()*14 + 8).toFixed(0);
+            var color = colores[Math.floor(Math.random()*colores.length)];
+            var delay = (Math.random()*4).toFixed(2);
+            var dur = (Math.random()*2 + 2.5).toFixed(2);
+            html += '<svg class="star-spark" viewBox="0 0 24 24" style="left:'+x+'%;top:'+y+'%;width:'+tam+'px;height:'+tam+'px;color:'+color+';animation-delay:'+delay+'s;animation-duration:'+dur+'s;" fill="currentColor">'+svgDestello+'</svg>';
+        }
+        return html;
+    }
+    var patronDestellos = generarDestellos(14);
+    document.querySelectorAll('.star-sparks').forEach(function(el){
+        el.innerHTML = patronDestellos;
+    });
+
+    if(reduceMotion){
+        document.querySelector('.starfield-bg').classList.add('sin-movimiento');
+    }
+})();
+</script>
+<!--Script animación logo: flotar + volteo tipo moneda-->
+<script>
+(function(){
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduceMotion) return;
+
+    function voltearMoneda(coin){
+        coin.classList.remove('volteo-extra');
+        void coin.offsetWidth;
+        coin.classList.add('volteo-extra');
+        coin.addEventListener('animationend', function handler(){
+            coin.classList.remove('volteo-extra');
+            coin.removeEventListener('animationend', handler);
+        });
+    }
+
+    document.querySelectorAll('.logo-stage').forEach(function(stage){
+        var coin = stage.querySelector('.logo-coin');
+        if(!coin) return;
+        stage.addEventListener('click', function(e){
+            if(e.target.closest('.logo-coin') || e.target.classList.contains('logo-gira')){
+                voltearMoneda(coin);
+            }
+        });
+        var img = stage.querySelector('.logo-gira');
+        if(img){
+            img.addEventListener('keydown', function(e){
+                if(e.key === 'Enter' || e.key === ' '){
+                    e.preventDefault();
+                    voltearMoneda(coin);
+                }
+            });
+        }
+    });
+})();
+</script>
+<!--Script para el botón "Enviar Solicitud" del formulario de contacto-->
+<script>
+(function(){
+    var boton = document.getElementById('btn-enviar-solicitud');
+    var mensaje = document.getElementById('mensaje-formulario');
+    if(!boton) return;
+
+    var camposRequeridos = ['campo-nombre','campo-telefono','campo-servicio','campo-correo'];
+
+    boton.addEventListener('click', function(){
+        var faltantes = camposRequeridos.filter(function(id){
+            var el = document.getElementById(id);
+            return !el || !el.value.trim();
+        });
+
+        // Limpia estados previos de error
+        camposRequeridos.forEach(function(id){
+            var el = document.getElementById(id);
+            if(el) el.classList.remove('campo-error');
+        });
+
+        if(faltantes.length){
+            faltantes.forEach(function(id){
+                var el = document.getElementById(id);
+                if(el) el.classList.add('campo-error');
+            });
+            mensaje.textContent = 'Por favor completa los campos obligatorios antes de enviar.';
+            mensaje.classList.remove('mensaje-exito');
+            mensaje.classList.add('mensaje-error', 'visible');
+            return;
+        }
+
+        var correo = document.getElementById('campo-correo');
+        var correoValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo.value.trim());
+        if(!correoValido){
+            correo.classList.add('campo-error');
+            mensaje.textContent = 'Ingresa un correo electrónico válido.';
+            mensaje.classList.remove('mensaje-exito');
+            mensaje.classList.add('mensaje-error', 'visible');
+            return;
+        }
+
+        // Aquí se conectaría el envío real (backend, servicio de email, etc.)
+        boton.disabled = true;
+        boton.textContent = 'Enviando...';
+
+        setTimeout(function(){
+            boton.disabled = false;
+            boton.innerHTML = 'Enviar Solicitud <span class="btn-arrow">→</span>';
+            mensaje.textContent = '¡Solicitud enviada! Te contactaremos en menos de 24 horas.';
+            mensaje.classList.remove('mensaje-error');
+            mensaje.classList.add('mensaje-exito', 'visible');
+
+            document.querySelectorAll('#contacto .form-control').forEach(function(campo){
+                if(campo.tagName === 'SELECT'){ campo.selectedIndex = 0; }
+                else { campo.value = ''; }
+            });
+        }, 700);
+    });
+})();
+</script>
+<!--Script cadenas del portafolio: flechas + espacio reservado si falta una imagen-->
+<script>
+(function(){
+    function iniciarCadena(id){
+        var cadena = document.getElementById(id);
+        if(!cadena) return;
+        var pista = cadena.querySelector('.foto-cadena-pista');
+        var prev  = cadena.querySelector('.foto-cadena-prev');
+        var next  = cadena.querySelector('.foto-cadena-next');
+        function paso(){
+            var item = pista.querySelector('.foto-cadena-item');
+            return item ? item.getBoundingClientRect().width + 24 : pista.clientWidth;
+        }
+        function actualizar(){
+            prev.disabled = pista.scrollLeft <= 4;
+            next.disabled = pista.scrollLeft >= pista.scrollWidth - pista.clientWidth - 4;
+        }
+        prev.addEventListener('click', function(){ pista.scrollBy({left:-paso(), behavior:'smooth'}); });
+        next.addEventListener('click', function(){ pista.scrollBy({left: paso(), behavior:'smooth'}); });
+        pista.addEventListener('scroll', actualizar, {passive:true});
+        window.addEventListener('resize', actualizar);
+        pista.addEventListener('keydown', function(e){
+            if(e.key === 'ArrowRight'){ e.preventDefault(); next.click(); }
+            if(e.key === 'ArrowLeft'){  e.preventDefault(); prev.click(); }
+        });
+        pista.querySelectorAll('img').forEach(function(img){
+            img.addEventListener('load', actualizar);
+            var caja = img.closest('.evento-foto');
+            if(!caja) return;
+            img.addEventListener('error', function(){ caja.classList.add('sin-foto'); });
+            if(img.complete && img.naturalWidth === 0){ caja.classList.add('sin-foto'); }
+        });
+        actualizar();
+    }
+    iniciarCadena('cadena-fotografia');
+    iniciarCadena('cadena-eventos');
+    iniciarCadena('cadena-detras');
+})();
+</script>
+
+<!-- Reproducir videos del portafolio (visuals y cobertura) -->
+<script>
+(function(){
+    var reels = document.querySelectorAll('[data-reel-video]');
+    function enPantallaCompleta(video){
+        return document.fullscreenElement === video
+            || document.webkitFullscreenElement === video
+            || video.webkitDisplayingFullscreen === true;
+    }
+    function salirPantallaCompleta(video){
+        if(document.fullscreenElement && document.exitFullscreen){
+            document.exitFullscreen();
+        } else if(video.webkitDisplayingFullscreen && video.webkitExitFullscreen){
+            video.webkitExitFullscreen();
+        }
+    }
+    function restaurarTarjeta(reel, video){
+        reel.classList.remove('is-playing');
+        if(!enPantallaCompleta(video)) video.controls = false;
+    }
+    function pausarOtros(actual){
+        reels.forEach(function(reel){
+            if(reel === actual) return;
+            var v = reel.querySelector('video');
+            if(!v) return;
+            v.pause();
+            salirPantallaCompleta(v);
+            restaurarTarjeta(reel, v);
+        });
+    }
+    reels.forEach(function(reel){
+        var video = reel.querySelector('video');
+        var btn = reel.querySelector('.play');
+        if(!video || !btn) return;
+        btn.addEventListener('click', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            pausarOtros(reel);
+            if(video.paused){
+                reel.classList.add('is-playing');
+                video.controls = true;
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+        video.addEventListener('play', function(){
+            reel.classList.add('is-playing');
+            video.controls = true;
+        });
+        video.addEventListener('pause', function(){
+            if(video.ended) return;
+            if(enPantallaCompleta(video)){
+                video.controls = true;
+                return;
+            }
+            restaurarTarjeta(reel, video);
+        });
+        video.addEventListener('ended', function(){
+            salirPantallaCompleta(video);
+            restaurarTarjeta(reel, video);
+            video.currentTime = 0;
+        });
+        function alCambiarFullscreen(){
+            if(enPantallaCompleta(video)){
+                video.controls = true;
+                reel.classList.add('is-playing');
+                return;
+            }
+            if(video.paused) restaurarTarjeta(reel, video);
+        }
+        document.addEventListener('fullscreenchange', alCambiarFullscreen);
+        video.addEventListener('webkitbeginfullscreen', function(){
+            video.controls = true;
+            reel.classList.add('is-playing');
+        });
+        video.addEventListener('webkitendfullscreen', function(){
+            if(video.paused) restaurarTarjeta(reel, video);
+        });
+    });
+})();
+</script>
+
+<!--Script para el timecode en vivo del hero-->
+<script>
+(function(){
+    var el = document.getElementById('live-timecode');
+    if(!el) return;
+    var frames = 0;
+    setInterval(function(){
+        frames++;
+        var totalSeg = Math.floor(frames/24);
+        var h = String(Math.floor(totalSeg/3600)).padStart(2,'0');
+        var m = String(Math.floor((totalSeg%3600)/60)).padStart(2,'0');
+        var s = String(totalSeg%60).padStart(2,'0');
+        var f = String(frames%24).padStart(2,'0');
+        el.textContent = h + ':' + m + ':' + s + ':' + f + ' — REC';
+    }, 1000/24);
+})();
+</script>
+
+</body>
+</html>
