@@ -1284,7 +1284,8 @@ header, main, section, footer{
 }
 @media (min-width:768px){
     .foto-cadena-item{ flex:0 0 calc((100% - 3rem) / 3); }
-    #cadena-eventos .foto-cadena-item{ flex:0 0 calc((100% - 1.5rem) / 2); }
+    #cadena-eventos .foto-cadena-item,
+    #cadena-visuals .foto-cadena-item{ flex:0 0 calc((100% - 1.5rem) / 2); }
 }
 .foto-cadena-btn{
     position:absolute;

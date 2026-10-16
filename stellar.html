@@ -430,46 +430,50 @@
 	<!-- Visuals -->
 	<div class="portafolio-bloque reveal" style="transition-delay:.1s">
 		<h3 class="portafolio-subtitulo"><i class="bi bi-film"></i> Nuestros Visuals</h3>
-		<div class="row g-4 justify-content-center">
-			<div class="col-md-4 galeria-item">
-				<div class="reel reel--comercial portafolio-ventana reveal" data-reel-video style="transition-delay:.05s">
-					<video class="reel-thumb" poster="imagenes/portafolio/visuals/agosto.jpg" preload="metadata" playsinline>
-						<source src="videos/visuals/agosto.mp4" type="video/mp4">
-					</video>
-					<button type="button" class="play" aria-label="Reproducir Agosto"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
-					<div class="reel-info">
-						<span class="tc">VIS. 01</span>
-						<div class="titulo">Agosto</div>
-						<span class="cat">Visual</span>
+		<div class="foto-cadena" id="cadena-visuals">
+			<button type="button" class="foto-cadena-btn foto-cadena-prev" aria-label="Videos anteriores"><i class="bi bi-chevron-left"></i></button>
+			<div class="foto-cadena-pista" tabindex="0" aria-label="Galería de visuals">
+				<div class="foto-cadena-item">
+					<div class="reel reel--comercial portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/visuals/agosto.jpg" preload="metadata" playsinline>
+							<source src="videos/visuals/agosto.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir Agosto"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">VIS. 01</span>
+							<div class="titulo">Agosto</div>
+							<span class="cat">Visual</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--comercial portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/visuals/bolas-de-fuego.jpg" preload="metadata" playsinline>
+							<source src="videos/visuals/bolas-de-fuego.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir Bolas de fuego"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">VIS. 02</span>
+							<div class="titulo">Bolas de fuego</div>
+							<span class="cat">Visual</span>
+						</div>
+					</div>
+				</div>
+				<div class="foto-cadena-item">
+					<div class="reel reel--comercial portafolio-ventana" data-reel-video>
+						<video class="reel-thumb" poster="imagenes/portafolio/visuals/central-america.jpg" preload="metadata" playsinline>
+							<source src="videos/visuals/central-america.mp4" type="video/mp4">
+						</video>
+						<button type="button" class="play" aria-label="Reproducir Central América"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+						<div class="reel-info">
+							<span class="tc">VIS. 03</span>
+							<div class="titulo">Central América</div>
+							<span class="cat">Visual</span>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 galeria-item">
-				<div class="reel reel--comercial portafolio-ventana reveal" data-reel-video style="transition-delay:.12s">
-					<video class="reel-thumb" poster="imagenes/portafolio/visuals/bolas-de-fuego.jpg" preload="metadata" playsinline>
-						<source src="videos/visuals/bolas-de-fuego.mp4" type="video/mp4">
-					</video>
-					<button type="button" class="play" aria-label="Reproducir Bolas de fuego"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
-					<div class="reel-info">
-						<span class="tc">VIS. 02</span>
-						<div class="titulo">Bolas de fuego</div>
-						<span class="cat">Visual</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 galeria-item">
-				<div class="reel reel--comercial portafolio-ventana reveal" data-reel-video style="transition-delay:.19s">
-					<video class="reel-thumb" poster="imagenes/portafolio/visuals/central-america.jpg" preload="metadata" playsinline>
-						<source src="videos/visuals/central-america.mp4" type="video/mp4">
-					</video>
-					<button type="button" class="play" aria-label="Reproducir Central América"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
-					<div class="reel-info">
-						<span class="tc">VIS. 03</span>
-						<div class="titulo">Central América</div>
-						<span class="cat">Visual</span>
-					</div>
-				</div>
-			</div>
+			<button type="button" class="foto-cadena-btn foto-cadena-next" aria-label="Videos siguientes"><i class="bi bi-chevron-right"></i></button>
 		</div>
 	</div>
 
@@ -631,7 +635,7 @@
 	<a href="#top" title="Ir al inicio">
 		<span class="bi bi-house-door-fill"></span>
 	</a>
-<p>Página creada por: <a href="#top" title="Visite nuestro sitio">Stellar Productions</a></p>
+<p>Página creada por: Keyla Marian Medina Figueroa</p>
 </footer>
  <!--Script para añadir desplazamiento suave-->
 <script>
@@ -871,6 +875,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     iniciarCadena('cadena-fotografia');
     iniciarCadena('cadena-eventos');
+    iniciarCadena('cadena-visuals');
     iniciarCadena('cadena-detras');
 })();
 </script>
