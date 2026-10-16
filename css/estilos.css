@@ -1414,3 +1414,17 @@ header, main, section, footer{
         color-scheme:dark;
     }
 }
+
+/* Nuestros Visuals más chicos que el resto del portafolio */
+#cadena-visuals{
+    max-width:680px;
+    margin-inline:auto;
+}
+#cadena-visuals .reel{
+    aspect-ratio:16/9;
+}
+@media (max-width:768px){
+    #cadena-visuals{
+        max-width:260px;
+    }
+}
