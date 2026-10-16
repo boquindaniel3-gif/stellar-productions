@@ -1320,3 +1320,96 @@ header, main, section, footer{
     font-size:12px; letter-spacing:1px; text-transform:uppercase;
     color:var(--gris-texto);
 }
+
+/* ---------- Teléfono ---------- */
+@media (max-width:768px){
+    .menu{
+        position:sticky;
+        top:0;
+        z-index:1030;
+        padding:6px 0;
+    }
+    #logo-navbar{
+        height:48px;
+        width:auto;
+    }
+    .menu .navbar-collapse{
+        width:100%;
+    }
+    .menu .navbar-nav .nav-link{
+        margin:0;
+        padding:12px 16px;
+        font-size:14px;
+    }
+    .menu .navbar-cta{
+        width:100%;
+    }
+    .menu .btn-pedir{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+
+    .jumbotron{
+        padding:28px 20px 40px;
+    }
+    .jumbotron .row{
+        flex-direction:column;
+    }
+    .jumbotron .col-md-6.text-center{
+        order:-1;
+    }
+    .hero-logo{
+        margin-top:0;
+        padding:0 0 8px;
+    }
+    .logo-stage--hero .logo-coin img{
+        max-height:200px;
+        width:auto;
+        margin-inline:auto;
+    }
+    .jumbotron h1{
+        font-size:34px;
+    }
+    .jumbotron p{
+        font-size:15px;
+    }
+    .jumbotron .btn{
+        margin-right:0;
+    }
+    .jumbotron .btn-warning{
+        display:inline-block;
+        min-width:220px;
+        padding:14px 28px;
+    }
+
+    .texto-nosotros{
+        display:block;
+        text-align:center;
+        font-size:16px;
+    }
+    .icono-nosotros-png{
+        display:none;
+    }
+
+    .container-fluid{
+        padding:48px 20px;
+    }
+    section.bg-gray .row > .col-md-4{
+        margin-bottom:16px;
+    }
+    section.bg-gray .row > .col-md-4:last-child{
+        margin-bottom:0;
+    }
+
+    .foto-cadena-btn{
+        display:none;
+    }
+    .foto-cadena-item{
+        flex:0 0 92%;
+    }
+
+    #contacto input[type="date"]{
+        color-scheme:dark;
+    }
+}
