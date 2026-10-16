@@ -1384,7 +1384,7 @@ header, main, section, footer{
     }
 
     .texto-nosotros{
-        display:block;
+        display:block !important;
         text-align:center;
         font-size:16px;
     }
