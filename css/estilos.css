@@ -1284,8 +1284,7 @@ header, main, section, footer{
 }
 @media (min-width:768px){
     .foto-cadena-item{ flex:0 0 calc((100% - 3rem) / 3); }
-    #cadena-eventos .foto-cadena-item,
-    #cadena-visuals .foto-cadena-item{ flex:0 0 calc((100% - 1.5rem) / 2); }
+    #cadena-eventos .foto-cadena-item{ flex:0 0 calc((100% - 1.5rem) / 2); }
 }
 .foto-cadena-btn{
     position:absolute;
@@ -1415,16 +1414,3 @@ header, main, section, footer{
     }
 }
 
-/* Nuestros Visuals más chicos que el resto del portafolio */
-#cadena-visuals{
-    max-width:680px;
-    margin-inline:auto;
-}
-#cadena-visuals .reel{
-    aspect-ratio:16/9;
-}
-@media (max-width:768px){
-    #cadena-visuals{
-        max-width:260px;
-    }
-}
